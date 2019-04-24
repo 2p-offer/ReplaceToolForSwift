@@ -1,0 +1,151 @@
+
+.phoneBack{
+    width: 330px;
+    height: 650px;
+    background: url(../img/registerPreviewBackground.png);
+    background-size: cover;
+    margin: 0 auto;
+}
+.fullBack{
+    width: 287px;
+    height: 624px;
+    background-color: #e5e5e5;
+    position: absolute;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 17px;
+}
+.colorBack{
+    width: 287px;
+    height: 624px;
+    position: absolute;
+    border-radius: 30px;
+    background:rgba(230,230,230,0.5)
+}
+
+.previewdiv {
+    width: 287px;
+    height: 624px;
+    background-image : url(../swiftSource/register/background/first/bg_0.png);
+    /*background: url(../img/registerPreviewBackground.png);*/
+    /*background: url(../img/bg_0.png);*/
+    /*background: url(../img/bg_3.jpg);*/
+    /*background: url(../img/second.jpg);*/
+    background-size: cover;
+    position: absolute;
+    border-radius: 30px;
+}
+.topdiv {
+    float: left;
+    margin-top: 177px;
+    margin-left: 28px;
+    width: 230px;
+    height: 200px;
+}
+
+.infocontainer {
+    background-color: white;
+    width: 215px;
+    margin-top: 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.infoinput {
+    width: 188px;
+    height:29px;
+    margin-left: 5px;
+    padding:0;
+    border: 0px;
+}
+
+.infoselect {
+    width: 150px;
+
+}
+
+.topimg{
+    margin-left: 0;
+}
+
+.toplab{
+    font-size: 12px;
+    color: darkgray;
+}
+
+.selectcontainer {
+    margin-top: 30px;
+}
+
+.toolbar{
+    margin: 0 auto;
+}
+
+
+.vercodebtn{
+    width: 75px;
+    height: 30px;
+    background-color: #fd8023;
+    margin-top: 14px;
+    margin-left: 145px;
+}
+
+.registerbtn{
+    width: 225px;
+    height: 30px;
+    /*background-color: #fd8023;*/
+    background-color: #fd8023;
+    margin-top: 2px;
+}
+
+.canclebtn{
+    width: 225px;
+    height: 30px;
+    background-color: #808080;
+    margin-top: 13px;
+
+}
+
+.verspan{
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 8px;
+}
+
+.btnspan{
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 100px;
+}
+
+
+/*===========其他预览页面==============*/
+.logintopdiv {
+    float: left;
+    margin-top: 177px;
+    margin-left: 28px;
+    width: 230px;
+    height: 200px;
+    display: none;
+}
+.pwdtopdiv {
+    float: left;
+    margin-top: 177px;
+    margin-left: 28px;
+    width: 230px;
+    height: 200px;
+    display: none;
+}
+
+.bundletopdiv{
+    float: left;
+    margin-top: 177px;
+    margin-left: 28px;
+    width: 230px;
+    height: 200px;
+    display: none;
+}

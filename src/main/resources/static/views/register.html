@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/register.css">
+    <script src="../../js/plugins/jquery.min.js"></script>
+    <script src="../../js/biz/register.js"></script>
+</head>
+<body>
+<div id="leftdiv" style="float: left;width:45%;float: left">
+    <div id="phoneBack" class="phoneBack">
+        <div id="fullBack" class="fullBack">
+            <div id="previewContainer" class="previewdiv">
+                <div id="colorBack" class="colorBack">
+                    <div id="topdiv" class="topdiv">
+                        <div class="infocontainer">
+                            <img id="userimg" class="topimg" src="../../swiftSource/register/user/1/user.png">
+                            <input type="text" class="infoinput" placeholder="用户名">
+                        </div>
+                        <div class="infocontainer">
+                            <img id="pwdimg" class="topimg" src="../../swiftSource/register/password/1/password.png">
+                            <input type="text" class="infoinput" placeholder="密码">
+                        </div>
+                        <div class="infocontainer">
+                            <img id="pwd2img" class="topimg" src="../../swiftSource/register/password/1/password.png">
+                            <input type="text" class="infoinput" placeholder="确认密码">
+                        </div>
+                        <div class="infocontainer" style="width: 135px;margin-top: 14px;float: left">
+                            <img id="mobileimg" class="topimg" src="../../swiftSource/register/mobile/1/mobile.png">
+                            <input type="text" class="infoinput" style="width: 110px; " placeholder="手机号">
+                        </div>
+                        <div class="vercodebtn">
+                            <span class="verspan">获取验证码</span>
+                        </div>
+                        <div class="infocontainer">
+                            <img id="vercodeimg" class="topimg" src="../../swiftSource/register/vercode/1/vercode.png">
+                            <input type="text" class="infoinput" placeholder="验证码">
+                        </div>
+                        <input type="checkbox" value=""><span style="color: white;font-size: 12px;">用户协议</span>
+                        <div id="registerbtn" class="registerbtn">
+                            <span class="btnspan">注册</span>
+                        </div>
+                        <div id="canclebtn" class="canclebtn">
+                            <span class="btnspan">取消</span>
+                        </div>
+                    </div>
+
+                    <div id="logintopdiv" class="logintopdiv">
+                        <div style="width: 215px;height: 30px"><span style="color:white;float:left;font-size:13px;margin-left:5px">登陆</span><span  style="float:right;font-size: 13px;color:#929292">取消</span></div>
+                        <div class="infocontainer">
+                            <img id="loginuserimg" class="topimg" src="../../swiftSource/register/user/1/user.png">
+                            <input type="text" class="infoinput" placeholder="用户名">
+                        </div>
+                        <div class="infocontainer">
+                            <img id="loginpwdimg" class="topimg" src="../../swiftSource/register/password/1/password.png">
+                            <input type="text" class="infoinput" placeholder="密码">
+                        </div>
+                        <span style="color: white;font-size: 12px;">绑定手机</span>
+                        <div id="loginregisterbtn" class="registerbtn">
+                            <span class="btnspan">登陆</span>
+                        </div>
+                        <div id="logincanclebtn" class="canclebtn">
+                            <span class="btnspan">注册</span>
+                        </div>
+                    </div>
+
+
+                    <div id="bundletopdiv" class="bundletopdiv">
+                        <div style="width: 215px;height: 30px"><span style="color:white;float:left;font-size:13px;margin-left:5px">绑定手机</span><span  style="float:right;font-size: 13px;color:#929292">返回登陆</span></div>
+                        <div class="infocontainer">
+                            <img id="bundleuserimg" class="topimg" src="../../swiftSource/register/user/1/user.png">
+                            <input type="text" class="infoinput" placeholder="用户名">
+                        </div>
+                        <div class="infocontainer">
+                            <img id="bundlepwdimg" class="topimg" src="../../swiftSource/register/password/1/password.png">
+                            <input type="text" class="infoinput" placeholder="密码">
+                        </div>
+                        <div class="infocontainer" style="width: 135px;margin-top: 14px;float: left">
+                            <img id="bundlemobileimg" class="topimg" src="../../swiftSource/register/mobile/1/mobile.png">
+                            <input type="text" class="infoinput" style="width: 110px; " placeholder="手机号">
+                        </div>
+                        <div class="vercodebtn">
+                            <span class="verspan">获取验证码</span>
+                        </div>
+                        <div class="infocontainer">
+                            <img id="bundlevercodeimg" class="topimg" src="../../swiftSource/register/vercode/1/vercode.png">
+                            <input type="text" class="infoinput" placeholder="验证码">
+                        </div>
+                        <input type="checkbox" value=""><span style="color: white;font-size: 12px;">显示密码</span>
+                        <div id="bundleregisterbtn" class="registerbtn">
+                            <span class="btnspan">绑定</span>
+                        </div>
+                        <div id="bundlecanclebtn" class="canclebtn">
+                            <span class="btnspan">取消</span>
+                        </div>
+                    </div>
+
+                    <div id="pwdtopdiv" class="pwdtopdiv">
+                        <div style="width: 215px;height: 30px"><span style="color:white;float:left;font-size:13px;margin-left:5px">找回密码</span><span  style="float:right;font-size: 13px;color:#929292">返回登陆</span></div>
+                        <div class="infocontainer" style="width: 135px;margin-top: 14px;float: left">
+                            <img id="pwdmobileimg" class="topimg" src="../../swiftSource/register/mobile/1/mobile.png">
+                            <input type="text" class="infoinput" style="width: 110px; " placeholder="手机号">
+                        </div>
+                        <div class="vercodebtn">
+                            <span class="verspan">获取验证码</span>
+                        </div>
+                        <div class="infocontainer">
+                            <img id="pwdvercodeimg" class="topimg" src="../../swiftSource/register/vercode/1/vercode.png">
+                            <input type="text" class="infoinput" placeholder="验证码">
+                        </div>
+                        <div class="infocontainer">
+                            <img id="pwdpwdimg" class="topimg" src="../../swiftSource/register/password/1/password.png">
+                            <input type="text" class="infoinput" placeholder="密码">
+                        </div>
+                        <div class="infocontainer">
+                            <img id="pwdpwd2img" class="topimg" src="../../swiftSource/register/password/1/password.png">
+                            <input type="text" class="infoinput" placeholder="确认密码">
+                        </div>
+                        <div id="pwdregisterbtn" class="registerbtn" style="margin-top: 10px">
+                            <span class="btnspan">重置</span>
+                        </div>
+                        <div id="pwdcanclebtn" class="canclebtn">
+                            <span class="btnspan">取消</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="rightdiv" style="float: right;width:45%;">
+    <div id="dealContainer" style="width: 400px;height: 630px; margin: 0 auto">
+
+        <div class="selectcontainer">
+            <label class="toplab">用户图标:</label>
+            <select id="usersel" class="infoselect">
+            </select>
+        </div>
+        <div class="selectcontainer">
+            <label class="toplab">密码图标:</label>
+            <select id="pwdsel" class="infoselect">
+            </select>
+        </div>
+
+        <div class="selectcontainer">
+            <label class="toplab">手机图标:</label>
+            <select id="telsel" class="infoselect">
+            </select>
+        </div>
+        <div class="selectcontainer">
+            <label class="toplab">验证图标:</label>
+            <select id="vercodesel" class="infoselect">
+            </select>
+        </div>
+        <div class="selectcontainer">
+            <label class="toplab">背景图片:</label>
+            <select id="backgroundsel" class="infoselect">
+            </select>
+        </div>
+
+    </div>
+
+</div>
+<div id="footer" style="height:650px">
+    <div clas="toolbar">
+        <button id="showpreview" style="color:green;">预__览</button>
+        <button id="besure" style="color:red;">生成</button>
+        <button id="showlogin" style="color:deepskyblue;">登陆页</button>
+        <button id="showregister" style="color:deepskyblue;">注册页</button>
+        <button id="showbundle" style="color:deepskyblue;">绑定页</button>
+        <button id="showpwd" style="color:deepskyblue;">密码页</button>
+        <!--        <button id="background" style="color:red;">背景</button>-->
+    </div>
+</div>
+</body>
+</html>

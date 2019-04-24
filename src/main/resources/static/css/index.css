@@ -1,0 +1,45 @@
+.top {
+    width: 1000px;
+    height: 100px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.content {
+    width: 990px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 0 auto;
+
+}
+
+.c-1 {
+    width: 100px;
+    height: 40px;
+    font-size: 12px ;
+    background-color: black;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.btn1 {
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 10px;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+}
+
+
+.btnspan {
+    color:white;
+}
+
+
+.footer {
+    width: 1000px;
+    height: 100px;
+    background-color: black;
+    margin: 0 auto;
+}

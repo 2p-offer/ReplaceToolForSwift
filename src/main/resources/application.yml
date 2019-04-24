@@ -1,0 +1,18 @@
+server.port : 7799
+
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .html
+biz:
+  path:
+    #swift文件所在目录
+    swiftProject : /Users/ray/Project/Swift/ThorSDK/ThorSDK/ui/paincode
+    backGroundPath : /Users/ray/Project/Swift/ThorSDK/ThorSDK/ui/paincode/bgImageCode
+    #开发版本
+    version : dev
+    #发布版本
+#    version : release
+
+    bgNum : 10

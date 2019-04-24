@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/register.css">
+    <script src="../../js/plugins/jquery.min.js"></script>
+    <script src="../../js/biz/register.js"></script>
+</head>
+<body>
+<div id="leftdiv" style="float: left;width:49% ; background-color: red">
+    <div id="previewContainer" style="width: 300px;height: 500px; background-color: darkgrey;margin: 0 auto;">
+        <div class="infocontainer">
+            <img id="userimg" src="../../swiftSource/register/user/1/user.png">
+            <input type="text" class="infoinput" placeholder="用户名">
+        </div>
+        <div class="infocontainer">
+            <img id="pwdimg" src="../../swiftSource/register/password/1/password.png">
+            <input type="text" class="infoinput" placeholder="密码">
+        </div>
+        <div class="infocontainer">
+            <img id="pwd2img" src="../../swiftSource/register/password/1/password.png">
+            <input type="text" class="infoinput" placeholder="确认密码">
+        </div>
+        <div class="infocontainer">
+            <img id="mobileimg" src="../../swiftSource/register/mobile/1/mobile.png">
+            <input type="text" class="infoinput" placeholder="手机号">
+        </div>
+        <div class="infocontainer">
+            <img id="vercodeimg" src="../../swiftSource/register/vercode/1/vercode.png">
+            <input type="text" class="infoinput" placeholder="验证码">
+        </div>
+    </div>
+</div>
+<div id="rightdiv" style="float: left;width: 49%; margin-left:2%;background-color:red">
+    <div id="dealContainer" style="width: 500px;height: 480px; background-color: hotpink;margin: 0 auto">
+
+        <div class="selectcontainer">
+            <label>用户图标:</label>
+            <select id="usersel" class="infoselect">
+                <option value="../../swiftSource/register/user/1/user.png">1</option>
+                <option value="../../swiftSource/register/user/2/user.png">2</option>
+            </select>
+        </div>
+        <div class="selectcontainer">
+            <label>密码图标:</label>
+            <select id="pwdsel" class="infoselect">
+                <option value="../../swiftSource/register/password/1/password.png">1</option>
+                <option value="../../swiftSource/register/password/2/password.png">2</option>
+            </select>
+        </div>
+
+        <div class="selectcontainer">
+            <label>手机图标:</label>
+            <select id="telsel" class="infoselect">
+                <option value="../../swiftSource/register/mobile/1/mobile.png">1</option>
+                <option value="../../swiftSource/register/mobile/2/mobile.png">2</option>
+            </select>
+        </div>
+        <div class="selectcontainer">
+            <label>验证图标:</label>
+            <select id="vercodesel" class="infoselect">
+                <option value="../../swiftSource/register/vercode/1/vercode.png">1</option>
+                <option value="../../swiftSource/register/vercode/2/vercode.png">2</option>
+            </select>
+        </div>
+
+    </div>
+    <div id="footer">
+        <button id="showpreview" style="color:deepskyblue;">预览</button>
+        <button id="besure" style="color:red;">生成</button>
+    </div>
+
+</div>
+</body>
+</html>
