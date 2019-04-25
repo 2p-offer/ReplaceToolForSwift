@@ -21,7 +21,7 @@ public class CommonUtil {
         Map<String,String> names=new HashMap<>();
         System.out.println("get dir names:");
         for(File name:dir.listFiles()){
-            if(".DS_Store".equals(name)){
+            if(".DS_Store".equals(name)||!name.isDirectory()){
                 continue;
             }
             String path=name.getAbsolutePath().split("swiftSource")[1];

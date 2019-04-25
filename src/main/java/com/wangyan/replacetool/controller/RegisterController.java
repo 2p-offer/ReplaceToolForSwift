@@ -120,6 +120,7 @@ public class RegisterController {
     }
 
 
+    @ResponseBody
     @PostMapping("/replaceSwift")
     public String replaceSwift(@RequestBody String pathString) {
         JSONObject jsonObject = JSONObject.parseObject(pathString);

@@ -1,4 +1,4 @@
-server.port : 7799
+server.port : 7798
 
 spring:
   mvc:
