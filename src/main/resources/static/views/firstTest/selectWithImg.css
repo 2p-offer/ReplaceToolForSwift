@@ -1,0 +1,31 @@
+.container{
+    margin: 100px 500px;
+    width: 100px;
+    /*border: 1px solid red;*/
+}
+
+.selectDiv{
+    width: 100px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    /*border: 1px solid red;*/
+}
+
+.optionContainerDiv{
+    width: 100px;
+    border: 1px solid #dddddd;
+    display: none;
+}
+
+.optionDiv{
+    width: 100px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.optionSpan{
+    margin-left: 10px;
+}

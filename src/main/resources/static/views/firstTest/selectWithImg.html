@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="selectWithImg.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+<!--<select>-->
+<!--    <option style="width: 100px;height: 40px"><img src="../../swiftSource/register/background/first/bg_0.png"/></option>-->
+<!--    <option style="background-image: url('../../swiftSource/register/background/first/bg_3.jpg')">123</option>-->
+<!--</select>-->
+<div id="container" class="container">
+    <div id="selectDiv" class="selectDiv">
+        <img id="selectImg" src="../../swiftSource/register/mobile/1/mobile.png"/><span id="selectSpan" class="optionSpan">1</span>
+    </div>
+    <div id="optionContainerDiv" class="optionContainerDiv">
+        <div class="optionDiv" onclick="optionClick(this)">
+            <img name="optionimg" src="../../swiftSource/register/mobile/2/mobile.png"/><span name="optionspan" class="optionSpan">2</span>
+        </div>
+        <div class="optionDiv" onclick="optionClick(this)">
+            <img name="optionimg" src="../../swiftSource/register/mobile/1/mobile.png"/><span name="optionspan" class="optionSpan">1</span>
+        </div>
+
+    </div>
+
+    <button id="addbtn">添加option</button>
+</div>
+<script src="../../js/plugins/jquery.min.js"></script>
+<script src="selectWithImg.js"></script>
+
+</body>
+</html>

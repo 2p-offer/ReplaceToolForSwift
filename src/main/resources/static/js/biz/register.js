@@ -12,11 +12,12 @@ $(function () {
 
     $("#showpreview").on("click",function () {
 
-        usrsel=prev+$("#usersel").val();
-        pwdsel=prev+$("#pwdsel").val();
-        telsel=prev+$("#telsel").val();
-        vercodesel=prev+$("#vercodesel").val();
+        usrsel=$("#userselectImg").attr('src');
+        pwdsel=$("#pwdselectImg").attr('src');
+        telsel=$("#telselectImg").attr('src');
+        vercodesel=$("#verselectImg").attr('src');
         backgroundimgs=$("#backgroundsel").val().split(",");
+
         $("#userimg").attr('src',usrsel);
         $("#pwdimg").attr('src',pwdsel);
         $("#pwd2img").attr('src',pwdsel);
@@ -114,10 +115,48 @@ $(function () {
     });
 
 
+    //Select  想干
+    $("#userselectDiv").on("click",function () {
+        $("#useroptionContainerDiv").css("display","block");
+    });
+    $("#usercontainer").mouseleave(function () {
+        $("#useroptionContainerDiv").css("display","none");
+    });
+
+    $("#pwdselectDiv").on("click",function () {
+        $("#pwdoptionContainerDiv").css("display","block");
+    });
+    $("#pwdcontainer").mouseleave(function () {
+        $("#pwdoptionContainerDiv").css("display","none");
+    });
+
+    $("#telselectDiv").on("click",function () {
+        $("#teloptionContainerDiv").css("display","block");
+    });
+    $("#telcontainer").mouseleave(function () {
+        $("#teloptionContainerDiv").css("display","none");
+    });
+
+    $("#verselectDiv").on("click",function () {
+        $("#veroptionContainerDiv").css("display","block");
+    });
+    $("#vercontainer").mouseleave(function () {
+        $("#veroptionContainerDiv").css("display","none");
+    });
+
+    $(".optionDiv").hover(function () {
+        $(this).css("background-color","#ddd");
+    },function () {
+        $(this).css("background-color","white");
+
+    })
+
+
+
 });
 
 function replaceBackGroundImg() {
-    if(backgroundindex==backgroundimgs.length){
+    if(backgroundindex>=backgroundimgs.length){
         backgroundindex=0;
     }
     var imgname=backgroundimgs[backgroundindex];
@@ -135,34 +174,40 @@ function init() {
         },
         success : function(data){
             var jsondata=eval("("+data+")")
-            var user = jsondata.user;
-            for(var i in user){
-                var dirname=user[i]+"/user.png";
-                $("#usersel").append("<option value='"+dirname+"'>"+i+"</option>");
+            var usersel = jsondata.user;
+            for(var i in usersel){
+                var dirname=usersel[i]+"/user.png";
+                $("#useroptionContainerDiv").append("<div class=\"optionDiv\" onclick=\"useroptionClick(this)\">\n" +
+                    "            <img name=\"optionimg\" src=\""+prev+dirname+"\"/><span name=\"optionspan\" class=\"optionSpan\">"+i+"</span>\n" +
+                    "        </div>");
 
             }
-            var pwd = jsondata.password;
-            for(var i in pwd){
-                var dirname=pwd[i]+"/password.png";
-                $("#pwdsel").append("<option value='"+dirname+"'>"+i+"</option>");
+            var pwdsel = jsondata.password;
+            for(var i in pwdsel){
+                var dirname=pwdsel[i]+"/password.png";
+                $("#pwdoptionContainerDiv").append("<div class=\"optionDiv\" onclick=\"pwdoptionClick(this)\">\n" +
+                    "            <img name=\"optionimg\" src=\""+prev+dirname+"\"/><span name=\"optionspan\" class=\"optionSpan\">"+i+"</span>\n" +
+                    "        </div>");
 
             }
             var telsel = jsondata.mobile;
             for(var i in telsel){
                 var dirname=telsel[i]+"/mobile.png";
-                $("#telsel").append("<option value='"+dirname+"'>"+i+"</option>");
-
+                $("#teloptionContainerDiv").append("<div class=\"optionDiv\" onclick=\"teloptionClick(this)\">\n" +
+                    "            <img name=\"optionimg\" src=\""+prev+dirname+"\"/><span name=\"optionspan\" class=\"optionSpan\">"+i+"</span>\n" +
+                    "        </div>");
             }
             var vercodesel = jsondata.vercode;
             for(var i in vercodesel){
                 var dirname=vercodesel[i]+"/vercode.png";
-                $("#vercodesel").append("<option value='"+dirname+"'>"+i+"</option>");
+                $("#veroptionContainerDiv").append("<div class=\"optionDiv\" onclick=\"veroptionClick(this)\">\n" +
+                    "            <img name=\"optionimg\" src=\""+prev+dirname+"\"/><span name=\"optionspan\" class=\"optionSpan\">"+i+"</span>\n" +
+                    "        </div>");
 
             }
 
             var backgroundsel = jsondata.background;
             for(var i in backgroundsel){
-                console.log(backgroundsel);
                 var dirname=backgroundsel[i];
                 $("#backgroundsel").append("<option value='"+dirname+"'>"+i+"</option>");
 
@@ -176,4 +221,49 @@ function doTask(){
     setInterval(function(){
         replaceBackGroundImg();
     },1000);
+}
+
+function useroptionClick(option) {
+
+
+    userimgsrc=$(option).find("img[name='optionimg']")[0].getAttribute("src");
+    userspantxt=$(option).find("span[name='optionspan']")[0].innerText;
+
+    $("#userselectImg").attr("src",userimgsrc);
+    $("#userselectSpan").text(userspantxt);
+    $("#useroptionContainerDiv").css("display","none");
+
+}
+function pwdoptionClick(option) {
+
+
+    pwdimgsrc=$(option).find("img[name='optionimg']")[0].getAttribute("src");
+    pwdspantxt=$(option).find("span[name='optionspan']")[0].innerText;
+
+    $("#pwdselectImg").attr("src",pwdimgsrc);
+    $("#pwdselectSpan").text(pwdspantxt);
+    $("#pwdoptionContainerDiv").css("display","none");
+
+}
+function teloptionClick(option) {
+
+
+    telimgsrc=$(option).find("img[name='optionimg']")[0].getAttribute("src");
+    telspantxt=$(option).find("span[name='optionspan']")[0].innerText;
+
+    $("#telselectImg").attr("src",telimgsrc);
+    $("#telselectSpan").text(telspantxt);
+    $("#teloptionContainerDiv").css("display","none");
+
+}
+function veroptionClick(option) {
+
+
+    verimgsrc=$(option).find("img[name='optionimg']")[0].getAttribute("src");
+    verspantxt=$(option).find("span[name='optionspan']")[0].innerText;
+
+    $("#verselectImg").attr("src",verimgsrc);
+    $("#verselectSpan").text(verspantxt);
+    $("#veroptionContainerDiv").css("display","none");
+
 }
